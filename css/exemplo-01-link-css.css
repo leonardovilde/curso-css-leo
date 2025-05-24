@@ -1,0 +1,27 @@
+body{
+    background-color: #6495ed;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+}
+
+div{
+    background-color: hsl(170, 88%, 27%);
+}
+
+a{
+    text-decoration: none;
+    color: rgb(1, 67, 1);
+    display: inline-block;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    
+}
+
+a:hover{
+    /*Quando o usuario passar o mouse por cima da tag a muda a cor */
+    color: #ffffff;
+}

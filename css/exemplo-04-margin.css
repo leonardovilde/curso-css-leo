@@ -1,0 +1,36 @@
+body{
+    background-color: #34c9eb;
+}
+h1{
+    margin-left: 10px;
+    margin-top: 40px;
+    /*centralizar o texto horizontalmente */
+    text-align: center;
+}
+
+img{
+    max-height: 300px;
+}
+
+div{
+    margin-bottom: 10px;
+}
+
+input{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+textarea{
+    display: block;
+    width: 100%;
+    /*altera a forma que é calculado o width, height para levar em consideração padding, border, margin, ou seja, não ultrapassara o tamanho 100% do form */
+    box-sizing: border-box;
+}
+
+form{
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 30px;
+}

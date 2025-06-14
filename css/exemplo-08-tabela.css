@@ -1,0 +1,109 @@
+.banner{
+    /* definie a imagem de fundo a ser exibida */
+    background-image: url('https://picsum.photos/id/1018/1200/300');
+
+    /* centraliza a imagem de fundo no elemento */
+    background-position: center;
+
+    /* faz com que a imagem cubra todo o elemento, mantendo a proporção */
+    background-size: cover;
+
+    /* impede que a imagem se repita(nem na horinzontal nem na vertical) */
+    background-repeat: no-repeat;
+
+    /* usa o valor padrão, que é scroll, fazendo o fundo rolar com a pagina */
+    background-attachment: initial;
+
+    /* usa o valor padrão que é padding-box, a imagem inicia a partir da area padding */
+    background-origin: initial;
+
+    /* usa o valor padrão que é bordex-box, a imagem de fundo se estende até a borda */
+    background-clip: initial;
+
+    background: url('https://picsum.photos/id/1018/1200/300') center/cover no-repeat;
+
+    height: 300px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+.banner h1{
+    font-size: 2.5rem;
+}
+
+.detalhes{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 40px 20px;
+}
+.detalhe{
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgb(0, 0, 0, 0.05);
+}
+
+@keyframes pulse{
+    0%{
+        transform: translate(0) scale(1);
+    }
+
+    50%{
+        transform: translate(-5px) scale(1.05);
+    }
+    100%{
+        transform: translate(0) scale(1);
+    }
+}
+.detalhe:hover{
+    animation-name: pulse;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+
+.opçoes{
+    background-color: #fff;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    overflow-x: auto;
+}
+
+.opçoes h2{
+    margin-bottom: 15px;
+    color: #1e90ff;
+    text-align: center;
+}
+
+.opçoes table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.opçoes th,
+.opçoes td{
+     padding: 12px;
+     border: 1px solid #ddd;
+     text-align: left;
+}
+
+.opçoes th{
+    background-color: #1e90ff;
+    color: #fff;
+}
+
+.opçoes tr:nth-child(ever){
+    background-color: #f9f9f9;
+}
+.opçoes tr:hover{
+    background-color: #f1f1f1;
+}
